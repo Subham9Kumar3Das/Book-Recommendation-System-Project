@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Animated fade-in effect for book cards */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #343a40;
+  font-weight: bold;
+}
+
+/* Card Styling */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Rating Display */
+.rating {
+  font-size: 0.9rem;
+  color: #ffc107;
+}
+
+/* Warning Alert */
+.alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border-color: #ffeeba;
+}
+
+/* Input Fields */
+input.form-control {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+/* Buttons */
+button.btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* 🔥 Improved Dropdown Suggestion Box */
+#suggestions {
+  width: 100%; /* Matches the parent input group */
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  z-index: 1000;
+  padding: 5px;
+}
+
+/* 🔹 Individual Suggestion Styling */
+#suggestions .list-group-item {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 🔥 Hover Effect */
+#suggestions .list-group-item:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+/* 🔹 Highlight First Suggestion */
+#suggestions .list-group-item:first-child {
+  font-weight: bold;
+}
