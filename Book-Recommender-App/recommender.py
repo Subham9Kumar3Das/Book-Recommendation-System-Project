@@ -3,9 +3,9 @@ import numpy as np
 
 # Load data
 popular_df = pickle.load(open("models/popular.pkl", "rb"))
-pt = pickle.load(open("models/pt.pkl", "rb"))
-books = pickle.load(open("models/books.pkl", "rb"))
-similarity_scores = pickle.load(open("models/similarity_scores.pkl", "rb"))
+pt = pickle.load(open("Models/pt.pkl", "rb"))
+books = pickle.load(open("Models/books.pkl", "rb"))
+similarity_scores = pickle.load(open("Models/similarity_scores.pkl", "rb"))
 
 def get_popular_books():
     """Returns top 50 popular books DataFrame"""
