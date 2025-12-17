@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 
 # Load data
-popular_df = pickle.load(open("models/popular.pkl", "rb"))
+popular_df = pickle.load(open("Models/popular.pkl", "rb"))
 pt = pickle.load(open("Models/pt.pkl", "rb"))
 books = pickle.load(open("Models/books.pkl", "rb"))
 similarity_scores = pickle.load(open("Models/similarity_scores.pkl", "rb"))
